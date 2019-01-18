@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>NSBM-Lerning Management System</title>
+	<link rel="icon" type="text/png" href="ic.png">
+	<link rel="stylesheet" type="text/css" href="nsbmstyle.css">
+
+</head>
+<body onLoad="Defaults()">
+	<!-- start OF Page Divition -->
+	<div id="pageDiv">
+	<div class="navbar"><!--Navigation bar-->
+		<!-- Top panel 1-->
+		<div id="topDiv1">
+			<a href="index.php"><img src="lout.png" alt="doc" class="loutbtn"></a>
+		</div>
+		<!-- Top panel 2-->
+		<div id="topDiv2">
+			<a href="NSBM.htm"><div id="topDiv2-1"></div></a>
+			<div id="topDiv2-2">
+				<ul id="topDiv2-2list">
+					<li><a href="NSBM.htm#ComLink">COMPUTING</a></li>
+					<li><a href="NSBM.htm#MgtLink">MANAGEMENT</a></li>
+					<li><a href="NSBM.htm#EngLink">ENGINERING</a></li>
+					<li><a href="NSBM.htm#MedLink">MEDICINE</a></li>
+					<li><a href="NSBM.htm#PostLink">POSTGRADUATE</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<!-- Left panel-->
+		<div id="left-rightDive" class="main"> <!--class "main" for scroll navigation bar-->
+		<!-- Left panel Div 1-->
+		<div id="leftDive1">
+			<h4>Main Menu</h4>
+			<table id="leftDiv1Tbl" class="link">
+				<tr style="height: 50px">
+					<td id="border"><a href="NSBM.htm#ComLink">Faculty of Computing</a></td>
+				</tr>
+				<tr style="height: 50px">
+					<td id="border"><a href="NSBM.htm#MgtLink">Faculty of Management</a></td>
+				</tr>
+				<tr style="height: 50px">
+					<td id="border"><a href="NSBM.htm#EngLink">Faculty of Engineering</a></td>
+				</tr>
+				<tr style="height: 50px">
+					<td id="border"><a href="NSBM.htm#MedLink">Faculty of Medicine</a></td>
+				</tr>
+				<tr style="height: 50px">
+					<td id="border"><a href="NSBM.htm#PostLink">Faculty of Postgraduate</a></td>
+				</tr>
+				
+			</table>				
+							
+		</div>
+
+
+		<!-- Left panel Div 3-->
+		<div id="leftDive3">
+			<!-- Calender JS code Strat -->
+			<div id=NavBar style=" width:202px; top:10px;margin-left: 5px;margin-top: 50px" align="center">
+				<form name="when">
+					<table>
+						<tr>
+							<td><input type="button" value="<-Last" onClick="Skip('-')"></td>
+							<td> </td>
+							<td><select name="month" onChange="On_Month()">
+
+							<script language="JavaScript1.2" src="calander.js">
+								if (ie4||ns6){
+									for (j=0;j<Month_Label.length;j++) {
+										document.writeln('<option value=' + j + '>' + Month_Label[j]);
+										   	}
+									}
+							</script>
+
+								</select>
+							</td>
+							<td><input type="text" name="year" size=1 maxlength=4 onKeyPress="return Check_Nums()" onKeyUp="On_Year()">
+							</td>
+							<td> </td>
+							<td><input type="button" value="Next->" onClick="Skip('+')"></td>
+							</tr></table></form></div>
+			<div id=Calendar style="width:202px; top:15px; margin-left: 5px" align="center"></div>
+			<!-- Calender JS code End -->
+		</div>
+		<div id="leftDivExtend"></div>
+		</div>
+
+		<!-- Middle panel-->
+		<div id="middleDive" class="main"> <!--class "main" for scroll navigation bar-->
+		<div id="middleDive1" class="mD1Color2"><h3>Web Based Application Development</h3></div>
+		<div id="middleDiveExtend"> 
+		<div id="middleDive5"></div>
+		<div id="middleDive5">Topic Outline</div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_1.pptx"><img src="pp.jpg" alt="doc"> Lecture 01</a></li> </div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_2.pptx"><img src="pp.jpg" alt="doc"> Lecture 02</a></li> </div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_3.pptx"><img src="pp.jpg" alt="doc"> Lecture 03</a></li> </div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_4.pptx"><img src="pp.jpg" alt="doc"> Lecture 04</a></li> </div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_5.pptx"><img src="pp.jpg" alt="doc"> Lecture 05</a></li> </div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_6.pptx"><img src="pp.jpg" alt="doc"> Lecture 06</a></li> </div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_7.ppt"><img src="pp.jpg" alt="doc"> Lecture 07</a></li> </div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_8.ppt"><img src="pp.jpg" alt="doc"> Lecture 08</a></li> </div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_9.ppt"><img src="pp.jpg" alt="doc"> Lecture 09</a></li> </div>
+		<div id="middleDive5"><li><a href="download.php?file=Lesson_10.ppt"><img src="pp.jpg" alt="doc"> Lecture 10</a></li> </div>
+		<div id="middleDive5"></div>
+		<div id="middleDive5"></div>
+		
+
+		</div>
+		
+
+		</div>
+
+		<!-- Right panel-->
+		<div id="left-rightDive" class="main"> <!--class "main" for scroll navigation bar-->
+		<!-- Right panel Div 1-->
+		<div id="righttDive1">
+			<h4>Student Help Desk</h4>
+			<table id="rightDiv1Tbl">
+					<tr style="height: 40px">
+						<td id="border"><a href="SHDLecHall.htm">Lecture Hall Allocation</a></td>
+					</tr>
+					<tr style="height: 40px">
+						<td id="border"><a href="SHDStudentSocites.htm">Student Socites</a></td>
+					</tr>
+					<tr style="height: 40px">
+						<td id="border"><a href="SHDExamTimetable.htm">Exam Time Tables</a></td>
+					</tr>
+					<tr style="height: 40px">
+						<td id="border"><a href="SHDSemesterTimeTable.htm">Semester Time tables</a></td>
+					</tr>
+					
+					<tr style="height: 40px">
+						<td id="border"><a href="SHDRequesForm.php">Request Forms</a></td>
+					</tr>
+					<tr style="height: 40px">
+						<td id="border"><a href="SHDPublications.htm">University Publications</a></td>
+					</tr>
+			</table>
+		</div>
+		<!-- Right panel Div 2-->
+		<div id="righttDive2"></div>
+		</div>
+
+
+	
+		<!-- Botam panel-->
+		<div id="botamDive">
+			<p>Copyright © All rights reserved, | Design & Developed by Clamax Software Solution</p>
+		</div>	
+		<!--End of panels-->
+	</div>	
+
+</body>
+</html>
